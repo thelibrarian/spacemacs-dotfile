@@ -237,6 +237,9 @@ layers configuration. You are free to put any user code."
              :recursive t
              :publishing-function org-publish-attachment)
             ("martin-poole" :components ("martin-poole-org" "martin-poole-static"))))
+    (setq org-capture-templates
+          '(("r" "RPG ideas" entry (file+headline "~/Documents/rpg/ideas.org" "Ideas")
+             "* %?\n\nEntered %U")))
     (spacemacs|disable-company org-mode)
     )
 )
