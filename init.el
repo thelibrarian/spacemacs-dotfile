@@ -236,7 +236,9 @@ layers configuration. You are free to put any user code."
              :publishing-directory "/ssh:agrav:/home/agrav/webapps/htdocs/rpg/poole"
              :recursive t
              :publishing-function org-publish-attachment)
-            ("martin-poole" :components ("martin-poole-org" "martin-poole-static")))))
+            ("martin-poole" :components ("martin-poole-org" "martin-poole-static"))))
+    (spacemacs|disable-company org-mode)
+    )
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
