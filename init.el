@@ -214,6 +214,7 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
+  (setq-default mac-right-option-modifier nil)
   )
 
 (defun dotspacemacs/user-config ()
