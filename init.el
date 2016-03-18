@@ -33,6 +33,7 @@ values."
      syntax-checking
      themes-megapack
      osx
+     deft
 
      ;; Languages
      emacs-lisp
@@ -251,6 +252,7 @@ layers configuration. You are free to put any user code."
              "* %?\n\nEntered %U")))
     (spacemacs|disable-company org-mode)
     )
+  (setq deft-directory "~/Documents/Notes")
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
