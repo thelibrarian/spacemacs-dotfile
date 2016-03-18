@@ -23,29 +23,37 @@ values."
      ;; Uncomment some layer names and press <SPC f e R> (Vim style) or
      ;; <M-m f e R> (Emacs style) to install them.
      ;; ----------------------------------------------------------------
-     auto-completion
-     ;; better-defaults
-     emacs-lisp
-     git
-     asciidoc
-     markdown
-     yaml
-     org
+     ;; General
      ;; (shell :variables
      ;;        shell-default-height 30
      ;;        shell-default-position 'bottom)
      ;; spell-checking
+     ;; better-defaults
+     auto-completion
      syntax-checking
-     ;; version-control
+     themes-megapack
+     osx
+
+     ;; Languages
+     emacs-lisp
+     markdown
+     yaml
+     org
      ruby
      shell-scripts
-     ruby-on-rails
      clojure
      javascript
      html
      sql
-     themes-megapack
-     osx
+
+     ;; Frameworks
+     ruby-on-rails
+
+     ;; Source control
+     version-control
+     git
+
+     ;; Vim
      unimpaired
      )
    ;; List of additional packages that will be installed without being
