@@ -249,6 +249,8 @@ layers configuration. You are free to put any user code."
             ("martin-poole" :components ("martin-poole-org" "martin-poole-static"))))
     (setq org-capture-templates
           '(("r" "RPG ideas" entry (file+headline "~/Documents/rpg/ideas.org" "Ideas")
+             "* %?\n\nEntered %U")
+            ("n" "Note" entry (file org-default-notes-file)
              "* %?\n\nEntered %U")))
     (spacemacs|disable-company org-mode)
     (setq org-modules
