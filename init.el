@@ -234,14 +234,14 @@ layers configuration. You are free to put any user code."
   (with-eval-after-load 'org
     (setq org-publish-project-alist
           '(("martin-poole-org"
-             :base-directory "/Volumes/tank/tony/Documents/rpg/characters/Martin Poole"
+             :base-directory "~/Documents/rpg/characters/Martin Poole"
              :base-extension "org"
              :publishing-directory "/ssh:agrav:/home/agrav/webapps/htdocs/rpg/poole"
              :recursive t
              :auto-preamble t
              :publishing-function org-html-publish-to-html)
             ("martin-poole-static"
-             :base-directory "/Volumes/tank/tony/Documents/rpg/characters/Martin Poole"
+             :base-directory "~/Documents/rpg/characters/Martin Poole"
              :base-extension "css\\|js\\|png\\|jpg\\|gif\\|pdf"
              :publishing-directory "/ssh:agrav:/home/agrav/webapps/htdocs/rpg/poole"
              :recursive t
@@ -251,6 +251,8 @@ layers configuration. You are free to put any user code."
           '(("r" "RPG ideas" entry (file+headline "~/Documents/rpg/ideas.org" "Ideas")
              "* %?\n\nEntered %U")))
     (spacemacs|disable-company org-mode)
+    (setq org-modules
+          '(org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-mac-link))
     )
   (setq deft-directory "~/Documents/Notes")
 )
@@ -262,9 +264,7 @@ layers configuration. You are free to put any user code."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(org-modules
-   (quote
-    (org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-mac-link))))
+ )
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
