@@ -232,6 +232,9 @@ user code."
 layers configuration. You are free to put any user code."
   (setq initial-frame-alist '((top . 50) (left . 200) (width . 130) (height . 75)))
   (with-eval-after-load 'org
+    (setq org-directory "~/Documents/Notes")
+    (setq org-log-done 'time)
+    (setq org-default-notes-file (concat org-directory "/notes.org"))
     (setq org-publish-project-alist
           '(("martin-poole-org"
              :base-directory "~/Documents/rpg/characters/Martin Poole"
