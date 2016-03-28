@@ -260,6 +260,9 @@ layers configuration. You are free to put any user code."
           '(org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-mac-link))
     )
   (setq deft-directory "~/Documents/Notes")
+  (define-key evil-insert-state-map "\C-e" 'end-of-line)
+  (define-key evil-normal-state-map "\C-e" 'end-of-line)
+  (define-key evil-insert-state-map "\C-a" 'beginning-of-line-text)
 )
 
 ;; Do not write anything past this comment. This is where Emacs will
