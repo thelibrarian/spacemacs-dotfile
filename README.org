@@ -1,0 +1,15 @@
+* My Spacemacs Config
+
+This is my config file for [[https://spacemacs.org][Spacemacs]]. There are many like it, but this one is
+mine.
+
+Main things I have done:
+
+1. Grouped enabled layers as per the [[http://spacemacs.org/doc/LAYERS.html][layers list]].
+2. Set default theme to Leuven
+3. Configured org-mode:
+   1. Set some defaults
+   2. Added a project for publishing
+   3. Set some capture templates
+ 
+P.S. I pronounce "spacemacs" "spah-cheh-macs".
