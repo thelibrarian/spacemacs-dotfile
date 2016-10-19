@@ -34,6 +34,7 @@ values."
      themes-megapack
      osx
      deft
+     ivy
 
      ;; Languages
      emacs-lisp
