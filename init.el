@@ -366,6 +366,8 @@ you should place your code here."
           '(org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-mac-link))
     )
   (setq deft-directory "~/Documents/Notes")
+  (setq-default js2-basic-offset 2)
+  (setq-default js-indent-level 2)
   (define-key evil-normal-state-map "\C-e" 'end-of-line)
   (define-key evil-normal-state-map "\C-a" 'beginning-of-line-text)
   )
