@@ -359,6 +359,8 @@ you should place your code here."
     (setq org-capture-templates
           '(("r" "RPG ideas" entry (file+headline "~/Documents/rpg/ideas.org" "Ideas")
              "* %?\n\nEntered %U")
+            ("t" "Todo" entry (file+headline "~/Documents/Notes/tasks.org" "Tasks")
+             "* TODO %?\n  %i\n  %a"
             ("n" "Note" entry (file org-default-notes-file)
              "* %?\n\nEntered %U")))
     (spacemacs|disable-company org-mode)
