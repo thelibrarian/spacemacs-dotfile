@@ -65,6 +65,7 @@ values."
      javascript
      html
      sql
+     csv
 
      ;; Frameworks
      ruby-on-rails
