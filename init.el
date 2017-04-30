@@ -340,6 +340,7 @@ you should place your code here."
   (with-eval-after-load 'org
     (setq org-directory "~/Documents/Notes")
     (setq org-log-done 'time)
+    (setq org-startup-indented t)
     (setq org-default-notes-file (concat org-directory "/notes.org"))
     (setq org-publish-project-alist
           '(("martin-poole-org"
