@@ -153,7 +153,7 @@ values."
    ;; List of themes, the first of the list is loaded when spacemacs starts.
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
-   dotspacemacs-themes '(omtose-darker
+   dotspacemacs-themes '(sanityinc-tomorrow-night
                          gruvbox
                          spacemacs-dark
                          spacemacs-light)
@@ -161,9 +161,9 @@ values."
    dotspacemacs-colorize-cursor-according-to-state t
    ;; Default font, or prioritized list of fonts. `powerline-scale' allows to
    ;; quickly tweak the mode-line size to make separators look not too crappy.
-   dotspacemacs-default-font '("Source Code Pro"
+   dotspacemacs-default-font '("Fira Code Retina"
                                :size 13
-                               :weight normal
+                               :weight light
                                :width normal
                                :powerline-scale 1.1)
    ;; The leader key
@@ -376,6 +376,7 @@ you should place your code here."
   (setq-default js-indent-level 2)
   (define-key evil-normal-state-map "\C-e" 'end-of-line)
   (define-key evil-normal-state-map "\C-a" 'beginning-of-line-text)
+  (mac-auto-operator-composition-mode)
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
