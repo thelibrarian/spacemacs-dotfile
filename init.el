@@ -377,6 +377,7 @@ you should place your code here."
   (define-key evil-normal-state-map "\C-e" 'end-of-line)
   (define-key evil-normal-state-map "\C-a" 'beginning-of-line-text)
   (mac-auto-operator-composition-mode)
+  (setq evil-replace-with-register-key (kbd "gr"))
   (evil-replace-with-register-install)
   )
 
