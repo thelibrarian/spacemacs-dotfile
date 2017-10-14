@@ -298,7 +298,7 @@ values."
    ;; If non-nil pressing the closing parenthesis `)' key in insert mode passes
    ;; over any automatically added closing parenthesis, bracket, quote, etc…
    ;; This can be temporary disabled by pressing `C-q' before `)'. (default nil)
-   dotspacemacs-smart-closing-parenthesis nil
+   dotspacemacs-smart-closing-parenthesis t
    ;; Select a scope to highlight delimiters. Possible values are `any',
    ;; `current', `all' or `nil'. Default is `all' (highlight any scope and
    ;; emphasis the current one). (default 'all)
@@ -330,6 +330,7 @@ executes.
 before packages are loaded. If you are unsure, you should try in setting them in
 `dotspacemacs/user-config' first."
   (setq-default mac-right-option-modifier nil)
+  (setq exec-path-from-shell-check-startup-files nil)
   )
 
 (defun dotspacemacs/user-config ()
@@ -340,6 +341,10 @@ This is the place where most of your configurations should be done. Unless it is
 explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq initial-frame-alist '((top . 50) (left . 200) (width . 130) (height . 75)))
+
+  ;; Added 2017-09-13 - workaround for helm-bookmark variable error. Should be fixed in Spacemacs 0.200.10
+  (require 'helm-bookmark)
+
   (with-eval-after-load 'org
     (setq org-directory "~/Documents/Notes")
     (setq org-log-done 'time)
@@ -379,6 +384,7 @@ you should place your code here."
   (mac-auto-operator-composition-mode)
   (setq evil-replace-with-register-key (kbd "gr"))
   (evil-replace-with-register-install)
+  (setq tramp-default-method "ssh")
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
