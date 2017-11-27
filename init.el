@@ -342,9 +342,6 @@ explicitly specified that a variable should be set before a package is loaded,
 you should place your code here."
   (setq initial-frame-alist '((top . 50) (left . 200) (width . 130) (height . 75)))
 
-  ;; Added 2017-09-13 - workaround for helm-bookmark variable error. Should be fixed in Spacemacs 0.200.10
-  (require 'helm-bookmark)
-
   (with-eval-after-load 'org
     (setq org-directory "~/Documents/Notes")
     (setq org-log-done 'time)
