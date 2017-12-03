@@ -82,7 +82,8 @@ values."
    ;; wrapped in a layer. If you need some configuration for these
    ;; packages, then consider creating a layer. You can also put the
    ;; configuration in `dotspacemacs/user-config'.
-   dotspacemacs-additional-packages '(evil-replace-with-register)
+   dotspacemacs-additional-packages '(evil-replace-with-register
+                                      org-journal)
    ;; A list of packages that cannot be updated.
    dotspacemacs-frozen-packages '()
    ;; A list of packages that will not be installed and loaded.
@@ -373,6 +374,7 @@ you should place your code here."
     (spacemacs|disable-company org-mode)
     (setq org-modules
           '(org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-mac-link))
+    (setq org-journal-file-format "%Y-%m-%d.org")
     )
   (setq deft-directory "~/Documents/Notes")
   (setq-default js2-basic-offset 2)
