@@ -366,11 +366,11 @@ you should place your code here."
             ("martin-poole" :components ("martin-poole-org" "martin-poole-static"))))
     (setq org-capture-templates
           '(("r" "RPG ideas" entry (file+headline "~/Documents/rpg/ideas.org" "Ideas")
-             "* %?\n\nEntered %U")
+             "* %?\n\nEntered %U\n")
             ("t" "Todo" entry (file+headline "~/Documents/Notes/tasks.org" "Tasks")
              "* TODO %?\n  %i\n  %a")
             ("n" "Note" entry (file org-default-notes-file)
-             "* %?\n\nEntered %U")))
+             "* %?\n\nEntered %U\n")))
     (spacemacs|disable-company org-mode)
     (setq org-modules
           '(org-bbdb org-bibtex org-docview org-gnus org-info org-irc org-mhe org-rmail org-w3m org-mac-link))
