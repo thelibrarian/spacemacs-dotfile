@@ -379,6 +379,7 @@ you should place your code here."
   (setq deft-directory "~/Documents/Notes")
   (setq-default js2-basic-offset 2)
   (setq-default js-indent-level 2)
+  (setq-default css-indent-offset 2)
   (define-key evil-normal-state-map "\C-e" 'end-of-line)
   (define-key evil-normal-state-map "\C-a" 'beginning-of-line-text)
   (mac-auto-operator-composition-mode)
