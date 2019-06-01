@@ -63,6 +63,7 @@ This function should only modify configuration layer settings."
      yaml
      org
      ruby
+     ;; python
      shell-scripts
      clojure
      javascript
@@ -76,9 +77,6 @@ This function should only modify configuration layer settings."
      ;; Source control
      version-control
      git
-
-     ;; Misc
-     nlinum
      )
 
    ;; List of additional packages that will be installed without being
@@ -247,7 +245,7 @@ It should only modify the values of Spacemacs settings."
 
    ;; The leader key accessible in `emacs state' and `insert state'
    ;; (default "M-m")
-   dotspacemacs-emacs-leader-key "M-m"
+   dotspacemacs-emacs-leader-key "M-n"
 
    ;; Major mode leader key is a shortcut key which is the equivalent of
    ;; pressing `<leader> m`. Set it to `nil` to disable it. (default ",")
